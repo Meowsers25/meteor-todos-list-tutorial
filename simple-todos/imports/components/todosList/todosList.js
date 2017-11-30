@@ -13,3 +13,11 @@ class TodosListCtrl {
     }];
   }
 }
+
+export default angular.module('todosList', [
+  angularMeteor
+])
+  .component('todosList', {
+    templateUrl: 'imports/components/todosList/todosList.html',
+    controller: TodosListCtrl
+  });
